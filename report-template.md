@@ -1,31 +1,20 @@
-# Module 12 Report Template
 
-## Overview of the Analysis
+Credit Risk Analysis Report
+Overview of the Analysis
+The purpose of this analysis was to develop machine learning models to predict credit risk in lending. The dataset contained various features related to loan applications, with the target variable being the loan status, where 0 represents a healthy loan and 1 represents a high-risk loan.
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+Results
+Model 1:
+Precision: 0.85
+Recall: 0.91
+Accuracy: 0.99
+F1-score: 0.88
+Model 2:
+Precision: 0.84
+Recall: 0.99
+Accuracy: 0.99
+F1-score: 0.91
+Summary
+Both Model 1 and Model 2 achieved high accuracy scores, with values close to 0.99, indicating strong performance in classifying loans. However, when considering precision and recall, Model 2 outperformed Model 1 in terms of identifying high-risk loans (label 1). Model 2 achieved a higher recall score of 0.99 compared to 0.91 for Model 1, indicating that it correctly identified a higher proportion of actual high-risk loans out of all high-risk predictions. Although Model 1 had a slightly higher precision score, the higher recall score of Model 2 suggests that it may be more effective in identifying potential risky loans while minimizing false negatives.
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
-
-## Results
-
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
-
-* Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
-
-
-
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
-
-## Summary
-
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+Based on these results, I recommend using Model 2 for credit risk analysis tasks. Its superior performance in correctly identifying high-risk loans makes it a valuable tool for financial institutions aiming to mitigate risks associated with lending. By leveraging Model 2, the company can effectively identify and manage potential credit risks, thereby optimizing its lending decisions and maintaining a healthy loan portfolio.
